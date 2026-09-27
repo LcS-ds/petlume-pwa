@@ -1,4 +1,4 @@
-const CACHE_NAME = 'petlume-v1';
+const CACHE_NAME = 'petlume-v2';
 const APP_SHELL = [
   './',
   './index.html',
