@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#083b3a" />
+    <meta name="description" content="PetLume Pet Shop Escola: banho, cuidados e produtos selecionados para cães e gatos." />
+    <title>PetLume Pet Shop Escola | Cuidado que faz bem</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="PetLume, início">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>PetLume</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu</span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="menu-principal" class="site-nav" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+        <button id="installButton" class="install-button" type="button" hidden>Instalar aplicativo</button>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">PET SHOP DE BAIRRO</p>
+          <h1>Mais leveza na rotina do seu pet</h1>
+          <p class="hero-text">Banho cuidadoso, produtos escolhidos com carinho e atendimento que respeita o tempo de cada animal.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#agendamento">Agendar cuidado</a>
+            <a class="text-link" href="#servicos">Conhecer serviços <span aria-hidden="true">›</span></a>
+          </div>
+          <div class="trust-row" aria-label="Diferenciais">
+            <span>Atendimento gentil</span>
+            <span>Ambiente tranquilo</span>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/petlume-hero.webp" alt="Cão golden retriever e gato laranja juntos em um pet shop iluminado" width="1536" height="1024" />
+          <p class="hero-note"><strong>Hoje</strong><br />Agenda aberta até 18h</p>
+        </div>
+      </section>
+
+      <section id="servicos" class="section services-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CUIDADO COMPLETO</p>
+            <h2>Serviços no ritmo do seu pet</h2>
+          </div>
+          <p>Rotinas planejadas para reduzir o estresse e manter cada etapa confortável.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card featured">
+            <span class="service-number">01</span>
+            <h3>Banho essencial</h3>
+            <p>Higiene, secagem suave, limpeza das orelhas e finalização.</p>
+            <strong>A partir de R$ 55</strong>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Tosa higiênica</h3>
+            <p>Cuidados pontuais para conforto e manutenção entre tosas completas.</p>
+            <strong>A partir de R$ 35</strong>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Pacote mensal</h3>
+            <p>Quatro banhos agendados e acompanhamento da rotina do animal.</p>
+            <strong>A partir de R$ 189</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="produtos" class="section products-section">
+        <div class="products-intro">
+          <p class="eyebrow">ESCOLHAS SIMPLES</p>
+          <h2>O essencial para cuidar bem</h2>
+          <p>Uma seleção curta de itens úteis para alimentação, passeio e descanso.</p>
+        </div>
+        <div class="product-list" role="list">
+          <article class="product" role="listitem">
+            <div class="product-icon food" aria-hidden="true">●</div>
+            <div><h3>Nutrição</h3><p>Rações e petiscos para diferentes fases.</p></div>
+            <span>Ver opções</span>
+          </article>
+          <article class="product" role="listitem">
+            <div class="product-icon walk" aria-hidden="true">∞</div>
+            <div><h3>Passeio</h3><p>Guias, peitorais e acessórios confortáveis.</p></div>
+            <span>Ver opções</span>
+          </article>
+          <article class="product" role="listitem">
+            <div class="product-icon rest" aria-hidden="true">⌁</div>
+            <div><h3>Descanso</h3><p>Camas e mantas fáceis de cuidar.</p></div>
+            <span>Ver opções</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="agendamento" class="section booking-section">
+        <div class="booking-copy">
+          <p class="eyebrow">AGENDAMENTO</p>
+          <h2>Reserve um horário</h2>
+          <p>Envie os dados básicos e a equipe confirma o melhor horário para o seu pet.</p>
+          <p class="booking-detail"><strong>Segunda a sábado</strong><br />9h às 18h</p>
+        </div>
+        <form id="bookingForm" class="booking-form">
+          <label>Seu nome<input name="nome" type="text" autocomplete="name" required /></label>
+          <label>Nome do pet<input name="pet" type="text" required /></label>
+          <label>Serviço
+            <select name="servico" required>
+              <option value="">Selecione</option>
+              <option>Banho essencial</option>
+              <option>Tosa higiênica</option>
+              <option>Pacote mensal</option>
+            </select>
+          </label>
+          <label>Telefone<input name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required /></label>
+          <button class="button primary" type="submit">Solicitar agendamento</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contato" class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">P</span><span>PetLume</span></a>
+        <p>Cuidado próximo para cães e gatos.</p>
+        <p><small>Projeto escolar com dados fictícios.</small></p>
+      </div>
+      <div><strong>Contato fictício</strong><a href="tel:+5511900002026">(11) 90000-2026</a><a href="mailto:contato@petlume.example">contato@petlume.example</a></div>
+      <div><strong>Endereço fictício</strong><p>Rua das Patinhas, 123<br />Vila Aurora, São Paulo – SP</p></div>
+      <p class="copyright">© <span id="year"></span> PetLume</p>
+    </footer>
+
+    <div id="offlineNotice" class="offline-notice" role="status" hidden>Você está sem internet. O conteúdo principal continua disponível.</div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
