@@ -9,6 +9,7 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="preload" as="image" href="assets/petlume-hero-800.webp" imagesrcset="assets/petlume-hero-800.webp 800w, assets/petlume-hero.webp 1600w" imagesizes="(max-width: 880px) 100vw, 55vw" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -47,7 +48,7 @@
           </div>
         </div>
         <div class="hero-media">
-          <img src="assets/petlume-hero.webp" alt="Cão golden retriever e gato laranja juntos em um pet shop iluminado" width="1536" height="1024" />
+          <img src="assets/petlume-hero.webp" srcset="assets/petlume-hero-800.webp 800w, assets/petlume-hero.webp 1600w" sizes="(max-width: 880px) 100vw, 55vw" fetchpriority="high" decoding="async" alt="Cão golden retriever e gato laranja juntos em um pet shop iluminado" width="1600" height="900" />
           <p class="hero-note"><strong>Hoje</strong><br />Agenda aberta até 18h</p>
         </div>
       </section>

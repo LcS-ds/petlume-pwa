@@ -1,4 +1,4 @@
-const CACHE_NAME = 'petlume-v2';
+const CACHE_NAME = 'petlume-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const APP_SHELL = [
   './favicon.svg',
   './offline.html',
   './assets/petlume-hero.webp',
+  './assets/petlume-hero-800.webp',
   './assets/icon-192.png',
   './assets/icon-512.png'
 ];
